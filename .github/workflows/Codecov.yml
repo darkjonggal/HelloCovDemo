@@ -17,7 +17,7 @@ jobs:
         id: run_msbuild
         run: msbuild /p:Configuration=Debug /p:Platform=x64 HelloCovDemo.sln
       - name: Setup VSTest and add to PATH
-        uses: darenm/Setup-VSTest@v1
+        uses: darenm/Setup-VSTest@v1.2
         id: setup_vstest
       - name: Setup OpenCppCoverage and add to PATh
         id: setup_opencppcoverage
